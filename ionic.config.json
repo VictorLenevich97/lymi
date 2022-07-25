@@ -1,0 +1,7 @@
+{
+  "name": "lymiApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
