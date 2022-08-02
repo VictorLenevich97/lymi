@@ -1,6 +1,14 @@
-import { IonContent, IonPage, IonButton, IonRow, IonText } from "@ionic/react";
+import {
+  IonContent,
+  IonPage,
+  IonButton,
+  IonRow,
+  IonText,
+  IonIcon,
+} from "@ionic/react";
 import { useScanner } from "../hooks/useScanner";
 import { Header } from "../components/Header";
+import { scanCircle } from "ionicons/icons";
 
 import "./Home.css";
 
@@ -37,6 +45,7 @@ const Home: React.FC = () => {
 
       <IonContent className={hideBg}>
         <div className="home-container">
+          <IonIcon hidden={!!hideBg} icon={scanCircle} className="scan-icon" />
           <IonButton
             size="large"
             shape="round"
@@ -45,7 +54,7 @@ const Home: React.FC = () => {
             onClick={startScan}
             hidden={!!hideBg}
           >
-            Start scan
+            Click to scan
           </IonButton>
         </div>
 

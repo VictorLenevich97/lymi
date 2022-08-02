@@ -35,7 +35,7 @@ export const useScanner = () => {
     stopScan();
 
     if (result.hasContent) {
-      console.log(result.content);
+      alert(result.content);
     }
   };
 

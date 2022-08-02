@@ -11,7 +11,7 @@
 }
 
 .scan-box {
-  border: 2px solid #ffffff;
+  border: 2px solid var(--ion-color-primary-contrast);
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   display: block;
   left: 50%;
@@ -20,4 +20,13 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 70vw;
+}
+
+.scan-icon {
+  width: 8rem;
+  height: 8rem;
+  fill: var(--ion-color-warning);
+  stroke-width: 0;
+  margin: 0 auto;
+  padding-bottom: 5rem;
 }
